@@ -6,7 +6,7 @@ class BigImage:
         self.image = image 
     
     def json(self):
-        result = { 'type': 'BigImage' }
+        result = {'type': 'BigImage'}
         result.update(self.image.json())
         
         return result

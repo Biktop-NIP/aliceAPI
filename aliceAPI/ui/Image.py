@@ -1,16 +1,17 @@
 from .ImageButton import ImageButton
+from typing import  Optional
 
 
 class Image:
-    def __init__(self, image_id: str, title: str | None=None, 
-                 description: str | None=None, button: ImageButton | None=None):
+    def __init__(self, image_id: str, title: Optional[str] = None,
+                 description: Optional[str] = None, button: Optional[ImageButton] = None):
         
         self.image_id = image_id
         self.title = title
         self.description = description
         self.button = button
         
-    def json(self):
+    def json(self) -> dict:
         result = {'image_id': self.image_id}
         if self.title is not None: 
             result['title'] = self.title 

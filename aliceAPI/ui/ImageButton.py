@@ -1,11 +1,14 @@
+from typing import Optional
+
+
 class ImageButton:
-    def __init__(self, text: str, payload: dict | None=None, url: str | None=None):
+    def __init__(self, text: str, payload: Optional[dict] = None, url: Optional[str] = None):
         
         self.text = text
         self.payload = payload
         self.url = url
         
-    def json(self):
+    def json(self) -> dict:
         result = {
             'text': self.text,
         }
