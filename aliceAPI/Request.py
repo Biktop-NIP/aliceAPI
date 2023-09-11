@@ -2,7 +2,8 @@ class Request:
     def __init__(self, request: dict):
         self.request = request
         self.type = request['request']['type']
-        self.meta = request['meta']
+        self.timezone = request['meta']['timezone']
+        self.locale = request['meta']['locale']
 
         self.message_id = request['session']['message_id']
         self.skill_id = request['session']['skill_id']

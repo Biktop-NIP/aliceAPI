@@ -1,5 +1,5 @@
 from .ImageButton import ImageButton
-from typing import  Optional
+from typing import Optional
 
 
 class Image:

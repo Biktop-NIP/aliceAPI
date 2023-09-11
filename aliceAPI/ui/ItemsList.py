@@ -1,12 +1,12 @@
 from .Image import Image
 from typing import Iterable
-from .Button import Button
+from .ImageButton import ImageButton
 from typing import Optional
 
 
 class ItemsList:
     def __init__(self, images: Iterable[Image], title: Optional[str] = None,
-                 footer_text: Optional[str] = None, footer_button: Optional[Button] = None):
+                 footer_text: Optional[str] = None, footer_button: Optional[ImageButton] = None):
         
         self.images = images
         self.title = title

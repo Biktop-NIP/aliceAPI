@@ -2,7 +2,7 @@ from typing import Optional
 
 
 class Button:
-    def __init__(self, title: str, hide: bool, 
+    def __init__(self, title: str, hide: bool = False,
                  payload: Optional[dict] = None, url: Optional[str] = None):
         
         self.title = title
